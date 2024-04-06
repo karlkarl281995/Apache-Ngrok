@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_karlkarl281995_Apache_Ngrok_1712435532802-push-trigger-input-set
+  identifier: Build_karlkarl281995_Apache_Ngrok_1712435532802pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ngrok
+  pipeline:
+    identifier: Build_karlkarl281995_Apache_Ngrok_1712435532802
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
