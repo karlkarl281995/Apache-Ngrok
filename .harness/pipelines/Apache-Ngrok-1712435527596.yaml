@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_karlkarl281995_Apache_Ngrok_1712435532802
+  name: Build Apache-Ngrok
+  orgIdentifier: default
+  projectIdentifier: ngrok
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1712431655753
+        repoName: karlkarl281995/Apache-Ngrok
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
