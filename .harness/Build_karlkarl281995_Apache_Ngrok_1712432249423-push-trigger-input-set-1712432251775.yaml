@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_karlkarl281995_Apache_Ngrok_1712432249423-push-trigger-input-set
+  identifier: Build_karlkarl281995_Apache_Ngrok_1712432249423pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: DockHttp
+  pipeline:
+    identifier: Build_karlkarl281995_Apache_Ngrok_1712432249423
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
